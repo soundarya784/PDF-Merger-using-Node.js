@@ -1,0 +1,68 @@
+<%- include("partials/header")-%>
+<div class="newbg">
+    <div class="intro">Combine Pdf files in just one click!</div>
+
+    <!-- icons -->
+    <div class="icons">
+        <i class="far fa-file-pdf fa-7x"></i><i class="fas fa-plus fa-3x" style="margin: 20px;"></i><i
+            class="far fa-file-pdf fa-7x"></i><i class="fas fa-arrow-right fa-3x" style="margin: 20px;"></i><i
+            class="fas fa-file-pdf fa-7x"></i>
+    </div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar"
+            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%"></div>
+    </div>
+
+    <!-- form -->
+    <form action="/upload" method="POST" encType="multipart/form-data">
+        <label for="one" class="custom-file-upload">
+        <input type="file" id="one" name="myfile1" accept=".pdf" multiple size="10"
+                    onchange="myFunction()">Choose
+                    Files</label>
+                    <div id="demo"></div>
+       <button type="submit" class="mg">MERGE</button>
+    </form>
+</div>
+<div class="about row">
+    <div class=" col-lg-4" style="padding: 3%;">
+        <div class="tit">
+            <i class="fas fa-thumbs-up"></i>Works for Windows, Mac, and Linux
+        </div>
+        <div class="bod">The web app is browser-based. So, it works for all operating systems including Mac,
+            Windows, and Linux.</div>
+    </div>
+    <div class=" col-lg-4" style="padding: 3%;">
+        <div class="tit">
+            <i class="fas fa-shield-alt"></i>Secure PDF merging online
+        </div>
+        <div class="bod">All the files you upload, as well as the file generated on our server, will be deleted
+            immediately.</div>
+    </div>
+    <div class=" col-lg-4" style="padding: 3%;">
+        <div class="tit">
+            <i class="fas fa-lightbulb"></i>Simple online tool to merge PDFs
+        </div>
+        <div class="bod">Our PDF merger allows you to quickly combine multiple PDF files into one single PDF
+            document, in just a few clicks. No signup is needed to use this online tool.</div>
+    </div>
+</div>
+<section class="row">
+    <div class="col-lg-6">
+        <div class="icons">
+            <i class="far fa-file-pdf fa-7x"></i><i class="fas fa-plus fa-3x" style="margin: 20px;"></i><i
+                class="far fa-file-pdf fa-7x"></i><i class="fas fa-arrow-right fa-3x" style="margin: 20px;"></i><i
+                class="fas fa-file-pdf fa-7x"></i>
+        </div>
+    </div>
+    <div class="col-lg-6 howto">
+
+       <b> <div class="tit">How to combine PDF files online:</div></b>
+       <div class="bod">
+       1.  Choose your files.<br>
+       2.  Wait for files to upload and check file order.<br>
+       3.  Add more files if needed.<br>
+       4.  Click ‘Merge!’ to combine and download your PDF.<br>
+    </div>
+    </div>
+</section>
+<%- include("partials/footer")-%>

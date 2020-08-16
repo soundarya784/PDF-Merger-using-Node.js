@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <title>PDF MERGER</title>
+    <meta name="description" content="merges pdf files">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Pridi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand" href="#"><i class="far fa-file-pdf fa-1x" style="margin-right: 8px;"></i>Pdf Merger</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown" style="float: right;">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">How to</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- text -->
+    <div class="newbg">
+        <div class="intro">Combine Pdf files in just one click!</div>
+
+        <!-- icons -->
+        <div class="icons">
+            <i class="far fa-file-pdf fa-7x"></i><i class="fas fa-plus fa-3x" style="margin: 20px;"></i><i
+                class="far fa-file-pdf fa-7x"></i><i class="fas fa-arrow-right fa-3x" style="margin: 20px;"></i><i
+                class="fas fa-file-pdf fa-7x"></i>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar"
+                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%"></div>
+        </div>
+
+        <!-- form -->
+        <form action="/upload" method="POST" enctype="multipart/form-data" id="myform" style="text-align: center; ">
+
+            <label for="one" class="custom-file-upload">
+
+                <input type="file" id="one" name="myfile1" accept=".pdf" multiple size="10"
+                    onchange="myFunction()">Choose
+                Files
+            </label>
+            <div id="demo"></div>
+
+            <button type="submit" class="mg">MERGE</button>
+
+        </form>
+    </div>
+    <div class="about row">
+        <div class=" col-lg-4" style="padding: 3%;">
+            <div class="tit">
+                <i class="fas fa-thumbs-up"></i>Works for Windows, Mac, and Linux
+            </div>
+            <div class="bod">The web app is browser-based. So, it works for all operating systems including Mac,
+                Windows, and Linux.</div>
+        </div>
+        <div class=" col-lg-4" style="padding: 3%;">
+            <div class="tit">
+                <i class="fas fa-shield-alt"></i>Secure PDF merging online
+            </div>
+            <div class="bod">All the files you upload, as well as the file generated on our server, will be deleted
+                permanently within an hour.</div>
+        </div>
+        <div class=" col-lg-4" style="padding: 3%;">
+            <div class="tit">
+                <i class="fas fa-lightbulb"></i>Simple online tool to merge PDFs
+            </div>
+            <div class="bod">Our PDF merger allows you to quickly combine multiple PDF files into one single PDF
+                document, in just a few clicks. No signup is needed to use this online tool.</div>
+        </div>
+    </div>
+    <section class="row">
+        <div class="col-lg-6">
+            <div class="icons">
+                <i class="far fa-file-pdf fa-7x"></i><i class="fas fa-plus fa-3x" style="margin: 20px;"></i><i
+                    class="far fa-file-pdf fa-7x"></i><i class="fas fa-arrow-right fa-3x" style="margin: 20px;"></i><i
+                    class="fas fa-file-pdf fa-7x"></i>
+            </div>
+        </div>
+        <div class="col-lg-6 howto">
+
+           <b> <div class="tit">How to combine PDF files online:</div></b>
+           <div class="bod">
+           1.  Choose your files.<br>
+           2.  Wait for files to upload and check file order.<br>
+           3.  Add more files if needed.<br>
+           4.  Click ‘Merge!’ to combine and download your PDF.<br>
+        </div>
+        </div>
+    </section>
+    <section id="footer">
+        <i class="far fa-copyright"></i> 2020 soundarya
+    </section>
+    <script src="js/script.js"></script>
+
+    <script>
+       
+    </script>
+
+</body>
+
+</html>

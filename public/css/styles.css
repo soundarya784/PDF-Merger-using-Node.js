@@ -1,0 +1,129 @@
+body{
+    /* background-image: linear-gradient(to right, rgba(0, 255, 179, 0.062), rgb(139, 197, 187)); */
+    background-image: linear-gradient(to right, rgba(0, 255, 179, 0.062), rgb(101, 221, 201));
+    text-align: center;
+}
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload,.mg {
+    border: 2px solid rgb(75, 174, 187);
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    background-color: rgb(75, 174, 187);
+    border-radius: 18px;
+    width: 200px;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    color: white;
+    font-size: 2rem;
+    box-shadow: 5px 10px 8px #888888;
+}
+.custom-file-upload:hover{
+    background-color: rgb(61, 139, 150);
+    color: white;
+    border: 2px solid rgb(61, 139, 150);
+    box-shadow: 5px 10px 8px #777575;
+}
+.icons{
+    margin: 100px;
+    text-align: center;
+    margin-top: 35px;
+}
+i{
+    padding: 20px;
+}
+.navbar{
+    /* background-image: linear-gradient(to right, rgba(0, 255, 179, 0.062), rgb(139, 197, 187)); */
+    background-color: rgb(107, 179, 167);
+}
+.nav-item{
+    margin-left: 20px;
+}
+    
+.navbar-light .navbar-nav .active>.nav-link,.navbar-light .navbar-nav .nav-link {
+    font-size: 1rem; 
+    color:  rgb(168, 48, 98);
+}
+
+.navbar-brand{
+    margin-right: 70%;
+    margin-left: 20px;
+    font-family: 'Courgette', cursive;
+    font-size: 1.9rem;
+   color:  rgb(168, 48, 98);
+}
+.navbar-light .navbar-brand {
+    color:  rgb(168, 48, 98)
+}
+.intro{
+    font-family: 'Courgette', cursive;
+font-family: 'Pridi', serif;
+
+text-align: center;
+font-size: 3rem;
+margin-top: 10px;
+color: rgb(168, 48, 98);
+}
+#demo{
+    color: rgb(35, 85, 92);
+    display: block;
+}
+/* #myform{
+    display: inline-block;
+} */
+.newbg{
+    box-shadow:3px 3px 10px 3px #666666;
+    width: 70%;
+    margin:3% auto 3% auto;
+    
+
+}
+.progress{
+    width: 60%;
+    margin:0px auto 20px auto;
+    visibility:hidden;
+}
+.mg{
+    visibility: hidden;
+    margin-bottom: 20px;
+}
+.about{
+    text-align: center;
+    background-color: white;
+   padding: 5%;
+   height: 300px;
+  
+}
+.tit{
+    font-size: 1.2rem;
+    color:rgb(168, 48, 98) ;
+}
+.bod{
+    font-size: 1rem;
+    text-align: justify;
+    margin:2%;
+    margin-right: 0px;
+}
+.fa-thumbs-up,.fa-shield-alt,.fa-lightbulb,.fa-copyright{
+    margin-right: 2%;
+}
+.howto{
+    margin-top: 3%;
+    text-align: left;
+}
+#footer{
+    background-color: rgb(107, 179, 167);
+    height: 60px;
+    padding: 1%;
+    margin-top: 10%;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+    text-decoration: none;
+}
